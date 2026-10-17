@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Élan — Little things, beautifully chosen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="announcement">Complimentary delivery on orders over ৳1,500 <span>·</span> Made for everyday magic</div>
+    <header class="site-header">
+      <a class="logo" href="#home" aria-label="Élan home">élan<span>✦</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#shop">Shop</a>
+        <a href="#new">New arrivals</a>
+        <a href="#story">Our story</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-button" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button class="icon-button" aria-label="Open shopping bag" id="bagButton"><i class="fa-solid fa-bag-shopping"></i><b id="bagCount">0</b></button>
+        <button class="menu-button" id="menuButton" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">THE EVERYDAY EDIT</p>
+          <h1>Little things.<br /><em>Big feeling.</em></h1>
+          <p class="hero-description">Thoughtful jewellery and beauty treasures designed to make the ordinary feel a little more like you.</p>
+          <a class="button button-dark" href="#shop">Explore the collection <i class="fa-solid fa-arrow-right"></i></a>
+          <div class="hero-proof">
+            <div class="avatar-stack"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=90&q=80" alt="Happy customer" /><img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=90&q=80" alt="Happy customer" /><img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=90&q=80" alt="Happy customer" /></div>
+            <span>Loved by 3,000+ women</span>
+          </div>
+        </div>
+        <div class="hero-art">
+          <div class="arch"></div>
+          <div class="hero-image image-zoom"><img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=1100&q=85" alt="Woman wearing statement earrings" /></div>
+          <div class="hero-note"><span>✦</span> Your daily<br />dose of pretty</div>
+          <div class="floating-product"><img src="https://images.unsplash.com/photo-1635767798638-3e25273a8236?auto=format&fit=crop&w=300&q=80" alt="Pearl earrings" /></div>
+        </div>
+        <p class="vertical-label">EST. 2026 · DHAKA</p>
+      </section>
+
+      <section class="category-section" id="shop">
+        <div class="section-heading split-heading">
+          <div><p class="eyebrow">SHOP BY MOOD</p><h2>Find your <em>little lovely</em></h2></div>
+          <a href="#products" class="text-link">View all pieces <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="categories">
+          <a class="category-card category-1" href="#products"><img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=700&q=85" alt="Gold tone earrings" /><span class="category-label"><small>01 /</small> Earrings <i class="fa-solid fa-arrow-up-right-from-square"></i></span></a>
+          <a class="category-card category-2" href="#products"><img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=700&q=85" alt="Delicate layered jewellery" /><span class="category-label"><small>02 /</small> Everyday extras <i class="fa-solid fa-arrow-up-right-from-square"></i></span></a>
+          <a class="category-card category-3" href="#products"><img src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=700&q=85" alt="Beauty products" /><span class="category-label"><small>03 /</small> Beauty treats <i class="fa-solid fa-arrow-up-right-from-square"></i></span></a>
+        </div>
+      </section>
+
+      <section class="feature-banner" id="new">
+        <div class="feature-image image-zoom"><img src="https://images.unsplash.com/photo-1611085583191-a3b181a88401?auto=format&fit=crop&w=1100&q=85" alt="Colourful beaded earrings" /></div>
+        <div class="feature-copy"><p class="eyebrow">JUST LANDED</p><h2>The colour<br />therapy edit.</h2><p>Bright, light-catching pieces for the days you want your accessories to do the talking.</p><a href="#products" class="button button-light">Meet the newness <i class="fa-solid fa-arrow-right"></i></a></div>
+        <p class="feature-word">COLOUR</p>
+      </section>
+
+      <section class="products-section" id="products">
+        <div class="section-heading split-heading"><div><p class="eyebrow">THE CROWD FAVOURITES</p><h2>Best sellers, <em>for a reason</em></h2></div><div class="slider-buttons"><button class="round-button" id="prev" aria-label="Previous products"><i class="fa-solid fa-arrow-left"></i></button><button class="round-button" id="next" aria-label="Next products"><i class="fa-solid fa-arrow-right"></i></button></div></div>
+        <div class="products" id="productList">
+          <article class="product-card"><div class="product-image"><span class="tag">BESTSELLER</span><button class="heart" aria-label="Save product"><i class="fa-regular fa-heart"></i></button><img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=650&q=85" alt="Pearl drop earrings" /><button class="quick-add" data-product="Pearl Muse Drops">Quick add <i class="fa-solid fa-plus"></i></button></div><div class="product-info"><div><h3>Pearl Muse Drops</h3><p>Freshwater pearl look</p></div><strong>৳650</strong></div></article>
+          <article class="product-card"><div class="product-image"><span class="tag">NEW</span><button class="heart" aria-label="Save product"><i class="fa-regular fa-heart"></i></button><img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=650&q=85" alt="Delicate gold tone necklace" /><button class="quick-add" data-product="Dainty Day Necklace">Quick add <i class="fa-solid fa-plus"></i></button></div><div class="product-info"><div><h3>Dainty Day Necklace</h3><p>Gold tone · adjustable</p></div><strong>৳780</strong></div></article>
+          <article class="product-card"><div class="product-image"><button class="heart" aria-label="Save product"><i class="fa-regular fa-heart"></i></button><img src="https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?auto=format&fit=crop&w=650&q=85" alt="Pink hair bow" /><button class="quick-add" data-product="Blush Bow Clip">Quick add <i class="fa-solid fa-plus"></i></button></div><div class="product-info"><div><h3>Blush Bow Clip</h3><p>Satin finish</p></div><strong>৳320</strong></div></article>
+          <article class="product-card"><div class="product-image"><span class="tag">LIMITED</span><button class="heart" aria-label="Save product"><i class="fa-regular fa-heart"></i></button><img src="https://images.unsplash.com/photo-1596755389378-c31d21fd1273?auto=format&fit=crop&w=650&q=85" alt="Lip gloss beauty product" /><button class="quick-add" data-product="Cherry Shine Gloss">Quick add <i class="fa-solid fa-plus"></i></button></div><div class="product-info"><div><h3>Cherry Shine Gloss</h3><p>Soft tint · high shine</p></div><strong>৳430</strong></div></article>
+        </div>
+      </section>
+
+      <section class="values" id="story">
+        <div class="value-intro"><p class="eyebrow">MORE THAN SOMETHING PRETTY</p><h2>Made for the <em>small rituals</em> that make you feel like yourself.</h2></div>
+        <div class="value-list"><div><i class="fa-regular fa-gem"></i><h3>Easy to adore</h3><p>Special-feeling pieces without the special-occasion price.</p></div><div><i class="fa-regular fa-face-smile"></i><h3>Made for real life</h3><p>Wearable, giftable, and never too precious for a Tuesday.</p></div><div><i class="fa-solid fa-gift"></i><h3>Wrapped with care</h3><p>Every order arrives ready to give—or keep entirely for yourself.</p></div></div>
+      </section>
+
+      <section class="instagram"><div class="insta-heading"><i class="fa-brands fa-instagram"></i><span>@elan.littlethings</span><p>Come behind the scenes with us</p></div><div class="insta-grid"><img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=500&q=80" alt="Jewellery detail" /><img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=500&q=80" alt="Necklace detail" /><img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=500&q=80" alt="Woman with earrings" /><img src="https://images.unsplash.com/photo-1524250502761-1ac6f2e30d43?auto=format&fit=crop&w=500&q=80" alt="Beauty collection" /><img src="https://images.unsplash.com/photo-1588444837495-c6cfeb53f32d?auto=format&fit=crop&w=500&q=80" alt="Beauty flatlay" /></div></section>
+    </main>
+
+    <footer><div class="footer-logo">élan<span>✦</span></div><p>Small things. A little more beautiful.</p><div class="footer-links"><a href="#shop">Shop</a><a href="#story">Our story</a><a href="#home">Instagram</a></div><small>© 2026 Élan. A prototype concept.</small></footer>
+    <aside class="bag-panel" id="bagPanel" aria-live="polite"><button id="closeBag" aria-label="Close bag"><i class="fa-solid fa-xmark"></i></button><p class="eyebrow">YOUR BAG</p><h2>A little treat<br />is on its way.</h2><div id="bagItems"><p class="empty">Your bag is waiting for something lovely.</p></div><button class="button button-dark checkout">Checkout <i class="fa-solid fa-arrow-right"></i></button></aside><div class="overlay" id="overlay"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
